@@ -39,13 +39,12 @@ video{
     display: grid;
     grid-template-rows: 1fr auto 1fr;
     grid-template-columns: 1fr;
+    justify-items: center;
     gap: 1.5em;
 }
 
 .optional{
     grid-area: 1 / 1;
-    justify-self: center;
-    align-self: center;
 
     color: white;
     font-size: 6em;
@@ -65,13 +64,13 @@ video{
 
 .main{
     grid-area: 2 / 1;
-
+    
     color: white;
     font-size: 10em;
     font-weight: 800;
     letter-spacing: 2px;
     text-align: center;
-
+    
     --zoom: 1;
     scale: var(--zoom);
     transition: scale 0.5s, letter-spacing 0.5s, color 0.25s;
@@ -85,7 +84,6 @@ video{
 
 .buttons{
     grid-area: 3 / 1;
-
     display: flex;
     justify-content: center;
     align-items: center;
