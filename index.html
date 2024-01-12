@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <video src="video.mp4" playsinline autoplay muted loop></video>
+    <div class="container" id="clock">
+        <div class="optional" id="meridian"></div>
+        <div class="main" id="time" onclick="changeMeridian()" onmouseover="addColor()" onmouseout="removeColor()">06:18:31</div>
+        <div class="buttons">
+            <i class='bx bx-time-five clickable' onclick="changeClock(this)"></i>
+            <i id="play" class='bx bx-play-circle' onclick="toggleWatch(this)"></i>
+            <i id="stop" class='bx bx-stop-circle' onclick="resetWatch()"></i>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+</html>
